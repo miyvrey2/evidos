@@ -8,9 +8,6 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {
-        "laravel/framework": "^5.0"
-    },
     "extra": {
         "laravel": {
             "providers": [
