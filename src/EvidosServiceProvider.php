@@ -14,6 +14,10 @@ class EvidosServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(__DIR__.'/../config/evidos.php', 'evidos');
+
+        $this->app->singleton(SignHost::class, function ($app) {
+            return new SignHost(env("EVIDOS_APP_KEY"), env("EVIDOS_API_KEY"));
+        });
     }
 
     /**
