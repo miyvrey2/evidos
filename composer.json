@@ -11,7 +11,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "miyvrey2\\evidos\\EvidosServiceProvider"
+                "Miyvrey2\\Evidos\\EvidosServiceProvider"
             ]
         }
     },
